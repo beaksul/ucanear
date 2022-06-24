@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+section{
+  max-width: 100%;
+  padding: 0 0;
+}
+
+.ucanear{
+  width: 100%;
+  height: 500px;
+  background: url("../images/CK_ti289a25012.png") 50% center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ucanear .txt-box{
+  width: 1200px;
+  padding: 0 20px;
+}
+
+.ucanear p{
+  width: 47%;
+  color: #333;
+}
+.ucanear p:nth-of-type(2){
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.section-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.ucanear-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.ucanear-app:nth-of-type(2){
+  flex-wrap: wrap;
+}
+
+.ucanear-app span{
+  color: #00b795;
+  font-weight: 700;
+}
+
+.ucanear-app .left,
+.ucanear-app .right{
+  width: 600px;
+  text-align: center;
+
+}
+
+.ucanear-app .left img,
+.ucanear-app .right img{
+  width: 400px;
+  filter: drop-shadow(5px 8px 4px rgba(85, 85, 85, 0.384));
+}
+
+.ucanear-app .right p{
+  padding-bottom: 50px;
+}
+.ucanear-app .left p{
+  padding: 100px 0 50px 0;
+}
+
+.ucanear-download{
+  width: 100%;
+  height: 570px;
+  overflow: hidden;
+}
+
+.ucanear-download .bg{
+  background-color: #f0fffc;
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.ucanear-download .bg .download-box{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  flex-wrap: wrap-reverse;
+}
+
+.ucanear-download .bg .download-box .left img{
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+.ucanear-download .bg .download-box .right{
+  width: 550px;
+}
+
+.ucanear-download .bg .download-box .right p:nth-of-type(1){
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.ucanear-download .bg .download-box .right p{
+  width: 100%;
+}
+
+.download-box .download{
+  width: 188px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.download-box .download img{
+  width: 40px;
+  padding-right: 10px;
+}
+
+.download-box .download a{
+  padding-right: 15px;
+}
+
+.download-box .download:hover{
+  transition: 0.1s;
+  filter: drop-shadow(3px 3px 2px rgba(85, 85, 85, 0.384));
+}
+
+@media screen and (max-width: 1066px) {
+
+  .ucanear p{
+    width: 80%;
+  }
+
+  .ucanear-app .left img,
+  .ucanear-app .right img{
+    width: 330px;
+  }
+
+  .ucanear-download{
+    height: 960px;
+  }
+  
+  .ucanear-download .bg{
+    height: 100%;
+    margin-top: 0px;
+  }
+  .ucanear-download .bg .download-box{
+    justify-content: center;
+  }
+
+  .ucanear-download .bg .download-box .left img{
+    position: static;
+  }
+
+  .ucanear-download .bg .download-box .right{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ucanear-download .bg .download-box .right p{
+    text-align: center;
+  }
+
+  .ucanear-download .bg .download-box .right p:nth-of-type(1){
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .ucanear-download .bg .download-box .left img{
+    width: 500px;
+  }
+
+  .download-box .download{
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .ucanear{
+    height: 340px;
+  }
+
+  .ucanear p{
+    width: 93%;
+  }
+
+  .ucanear-app .left img, .ucanear-app .right img{
+    width: 210px;
+  }
+
+  .ucanear-download .bg .download-box .left img{
+    width: 265px;
+  }
+
+  .ucanear-download .bg .download-box .right p:nth-of-type(1){
+    font-size: 26px!important;
+  }
+
+  .download-box .download{
+    margin-top: 30px;
+    width: 177px;
+    height: 50px;
+  }
+
+  .ucanear-download{
+    height: 520px;
+  }
+}

@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+.section-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-wrap h1{
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.function-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.function-box .txt{
+  width: 576px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.function-box .txt > p:nth-of-type(1){
+  margin-top: 30px;
+  width: 100%;
+
+}
+
+.function-box .txt .title{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.function-box .txt .title span{
+  color: #00b795;
+  font-size: 70px;
+  font-weight: 700;
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
+.function-box .txt .title p{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.function-box .icon{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.function-box .icon img{
+  width: 150px;
+}
+
+.function-box:nth-child(odd){
+  flex-wrap: wrap-reverse;
+}
+
+.function-box:not(:nth-of-type(1)){
+  margin-top: 150px;
+}
+
+.function-box:nth-child(odd) .txt{
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.function-box:nth-child(odd) .txt .title{
+  justify-content: flex-end;
+}
+
+.function-box:nth-child(odd) .txt .title span{
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+@media screen and (max-width: 1215px) {
+  .function-box{
+    justify-content: center;
+  }
+  .function-box .txt p{
+    text-align: center;
+  }
+  .function-box .icon{
+    margin-top: 70px;
+  }
+  .function-box:not(:nth-of-type(1)){
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .function-box .txt .title span{
+    font-size: 40px;
+  }
+
+  .function-box:not(:nth-of-type(1)){
+    margin-top: 110px!important;
+  }
+
+  .function-box .icon img{
+    width: 100px;
+  }
+}

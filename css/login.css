@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+section > p{
+  text-align: center;
+}
+
+.login{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login a .sns{
+  width: 400px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.login a:nth-of-type(1) .sns{
+  background-color: #06be34;
+  margin-bottom: 20px;
+}
+.login a:nth-of-type(2) .sns{
+  background-color: #fae300;
+}
+
+.login a .sns:hover{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.login a .sns .icon{
+  width: 10%;
+  position: absolute;
+  top: 53%;
+  left: 50px;
+  transform: translateY(-53%);
+}
+
+.login a .sns .icon img{
+  width: 30px;
+}
+
+.login a .sns .txt p{
+  font-weight: 700;
+  text-align-last: left;
+}
+
+.login a:nth-of-type(1) .sns .txt p{
+  color: #fff;
+}
+.login a:nth-of-type(2) .sns .txt p{
+  color: #391b1b;
+}
+
+@media screen and (max-width: 767px) {
+  .login a .sns{
+    width: 230px;
+    height: 60px;
+  }
+
+  .login a .sns .icon img{
+    width: 22px;
+  }
+
+  .login a .sns .icon{
+    left: 22px;
+  }
+}

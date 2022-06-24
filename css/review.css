@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* 리스트 페이지 */
+table{
+  width: 100%;
+  border-top: 2px solid #000;
+  table-layout: fixed;
+}
+
+tr{
+  width: 100px;
+  vertical-align: middle;
+
+}
+
+th, td{
+  border-bottom: 1px solid #dbdbdb;
+}
+
+th{
+  height: 50px;
+}
+
+td{
+  text-align: center;
+  height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+tr .title{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.write{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.write-box{
+  border: 1px solid #00b795;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.write-box a{
+  color: #00b795;
+  font-weight: 500;
+  padding: 8px 23px;
+}
+
+.write-box:hover{
+  background-color: #00b795;
+}
+
+.write-box:hover a{
+  color: #fff;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page .page-wrap{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next, .prev{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next a img, .prev a img{
+  width: 13px;
+  padding-bottom: 7px;
+  padding-top: 8px;
+}
+
+.prev a img{
+  transform: rotate(90deg);
+  padding-left: 5px;
+}
+
+.next a img{
+  transform: rotate(-90deg);
+  padding-right: 5px;
+}
+
+/* 리스트 페이지 */
+
+/* 뷰 페이지 */
+
+.view tr td,
+.comment tr td{
+  text-align: left;
+  padding-left: 30px;
+}
+
+.view tr:first-child,
+.comment tr:first-child{
+  font-weight: 500;
+}
+
+.view tr td ul{
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.view tr td ul li{
+  padding-right: 7%;
+  width: 160px;
+}
+
+.view tr td ul li span:nth-of-type(1){
+  padding-right: 10%;
+}
+
+.view tr td .txt{
+  padding: 50px 30px 100px 0;
+}
+
+.view tr td .txt p{
+  white-space: pre-wrap;
+}
+
+.comment{
+  border-top: 0;
+}
+
+.comment tr:first-child td{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment tr td .list{
+  border: 1px solid #00b795;
+  transition: 0.2s;
+  box-sizing: border-box;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.comment tr td .list a{
+  color: #00b795;
+}
+
+.comment tr td .list:hover{
+  background-color: #00b795;
+}
+
+.comment tr td .list:hover a{
+  color: #fff;
+}
+
+.comment tr:nth-of-type(2){
+  background-color: #f9f9f9;
+}
+
+.comment tr .comment-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.comment tr .comment-box p{
+  margin-top: 20px;
+}
+
+.comment tr .comment-box .delete{
+  width: 17px;
+  height: 17px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.comment tr .comment-box .delete a img{
+  width: 10px;
+  padding-bottom: 1px;
+}
+
+.comment-write{
+  border-top: 0px solid #000;
+}
+
+.comment-write tr{
+  width: 100%;
+}
+
+.comment-write tr th{
+  width: 100px;
+}
+
+.comment-write tr td,
+.comment-write tr th{
+  text-align: left;
+  padding-left: 30px;
+  border-bottom: 0px solid #000;
+}
+
+.text-area{
+  border: 1px solid #e8e8e8;
+  width: 99%;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.comment-write tr td textarea{
+  border: 0px solid #e8e8e8;
+  width: 100%;
+  min-width: 200px;
+  height: 30%;
+  resize: vertical;
+}
+
+.comment-write input{
+  width: 200px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+}
+
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 40px;
+  font-weight: 700;
+  color: #00b795;
+  border: 1px solid #00b795;
+  background-color: #fff;
+  cursor: pointer;
+  display: block;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+button:hover{
+  background-color: #00b795;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+
+  tr th:first-child,
+  tr td:first-child,
+  tr th:last-child,
+  tr td:last-child{
+    display: none;
+  }
+
+  .next, .prev{
+    width: 15px;
+    height: 15px;
+  }
+  .next a img, .prev a img{
+    width: 10px;
+  }
+
+  .write-box a{
+    padding: 5px 15px;
+  }
+
+  .comment-write tr th{
+    width: 52px;
+  }
+
+  .comment-write input{
+    width: 77px;
+  }
+
+  .comment tr td .list{
+    width: 50px;
+    height: 35px;
+  }
+
+  button{
+    width: 75px;
+    height: 35px;
+  }
+
+  .view tr td,
+  .comment tr td,
+  .comment-write tr td,
+  .comment-write tr th{
+    padding-left: 15px;
+  }
+
+  .view tr td .txt{
+    padding: 50px 15px 100px 0;
+  }
+}
